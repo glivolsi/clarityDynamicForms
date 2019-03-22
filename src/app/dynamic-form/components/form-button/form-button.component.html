@@ -1,0 +1,6 @@
+<div [formGroup]="group" [ngStyle]="config.style">
+  <button [disabled]="config.disabled" [type]="config.buttonType || 'button'" [class]="config.buttonClass || 'btn btn-primary'" (click)="handleButtonClick()">
+    {{ config.label }}
+    <clr-icon *ngIf="config.icon" [attr.shape]="config.icon"></clr-icon>
+  </button>
+</div>

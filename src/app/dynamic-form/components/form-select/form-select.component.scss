@@ -1,0 +1,21 @@
+select {
+  display: block;
+  align-content: center;
+  padding: 3px 5px;
+  min-width: 50%;
+  max-width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  color: rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease-in-out;
+
+  &:focus {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+}
+
+select.ng-invalid.ng-touched {
+  border-bottom: 0.5px solid red;
+}

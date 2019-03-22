@@ -1,0 +1,7 @@
+<clr-checkbox-container clrError [formGroup]="group" [clrInline]="config.inline">
+  <label>{{ config.label }}</label>
+  <clr-checkbox-wrapper *ngFor="let option of config.options">
+    <input type="checkbox" clrToggle [formControlName]="option.name" />
+    <label>{{ option.label }}</label>
+  </clr-checkbox-wrapper>
+</clr-checkbox-container>

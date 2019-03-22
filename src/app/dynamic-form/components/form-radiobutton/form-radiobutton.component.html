@@ -1,0 +1,9 @@
+<clr-radio-container [clrInline]="config.inline" [formGroup]="group">
+    <label>{{ config.label }}</label>
+    <clr-radio-wrapper *ngFor="let option of config.options">
+        <input type="radio" clrRadio [formControlName]="config.name" [value]="option.value || option" />
+        <label>{{ option.label || option }}</label>
+    </clr-radio-wrapper>
+    <!-- <clr-control-helper>Helper text</clr-control-helper>
+    <clr-control-error>This field is required!</clr-control-error> -->
+</clr-radio-container>

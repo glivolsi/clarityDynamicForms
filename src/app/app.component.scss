@@ -1,0 +1,21 @@
+.app {
+  background: #fff;
+  padding: 20px 30px;
+  width: 1000px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.clr-validate-icon {
+  width: 0rem;
+  height: 0rem;
+  min-width: 0rem;
+  min-height: 0rem;
+  color: green;
+  display: none;
+  visibility: hidden;
+  margin-left: 0rem;
+}
+
+clr-icon {
+  display: none;
+}

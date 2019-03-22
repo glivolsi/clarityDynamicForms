@@ -1,0 +1,12 @@
+<clr-select-container [formGroup]="group">
+  <label>{{ config.label }}</label>
+  <select clrSelect [formControlName]="config.name" [ngStyle]="config.style" [value]="config.value">
+    <!-- <option *ngIf="config.placeholder" selected hidden>{{ config.placeholder }}</option> -->
+    <option value="" disabled selected hidden>Please Choose...</option>
+    <option *ngFor="let option of config.options">
+      {{ option }}
+    </option>
+  </select>
+  <!-- <clr-control-helper>Helper text</clr-control-helper>
+    <clr-control-error>This field is required!</clr-control-error> -->
+</clr-select-container>

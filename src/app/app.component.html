@@ -1,0 +1,4 @@
+<div class="app">
+  <dynamic-form [config]="config" (submit)="submit($event)" formClass="clr-form-vertical" (buttonClick)="buttonClick($event)"> </dynamic-form>
+  <pre>{{ form.valid }} {{ form.value | json }} </pre>
+</div>
