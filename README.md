@@ -1,4 +1,4 @@
-# Ngdynaforms
+# clarityDynamicForms
 
 Dynamic Forms for Angular 7 and VMWare Clarity
 
