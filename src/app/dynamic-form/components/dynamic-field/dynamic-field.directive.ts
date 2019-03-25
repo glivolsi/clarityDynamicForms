@@ -10,6 +10,7 @@ import { Field } from '../../models/field.interface';
 import { FieldConfig } from '../../models/field-config.interface';
 import { FormLabelComponent } from '../form-label/form-label.component';
 import { FormToggleComponent } from '../form-toggle/form-toggle.component';
+import { FormDatepickerComponent } from '../form-datepicker/form-datepicker.component';
 
 const components: { [type: string]: Type<Field> } = {
   button: FormButtonComponent,
@@ -18,7 +19,8 @@ const components: { [type: string]: Type<Field> } = {
   radio: FormRadioButtonComponent,
   checkbox: FormCheckBoxComponent,
   label: FormLabelComponent,
-  toggle: FormToggleComponent
+  toggle: FormToggleComponent,
+  datepicker: FormDatepickerComponent
 };
 
 @Directive({

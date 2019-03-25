@@ -1,0 +1,17 @@
+<!-- <clr-input-container [formGroup]="group" clr-error>
+  <label *ngIf="config.label">a{{ config.label }}</label>
+  <input clrDate type="text" [placeholder]="config.placeholder" [formControlName]="config.name" [autofocus]="config.autofocus || false" [ngStyle]="config.style" />
+  <clr-control-helper *ngIf="config.helpertext && config.type !== 'range'">{{ config.helpertext }}</clr-control-helper>
+  <clr-control-helper *ngIf="config.type === 'range'">{{ group.controls[config.name].value }}</clr-control-helper>
+  <clr-control-error *ngIf="group.controls[config.name].errors && group.controls[config.name].errors.required">This field is required!</clr-control-error>
+  <clr-control-error *ngIf="group.controls[config.name].errors && group.controls[config.name].errors.minlength"
+    >Must be at least {{ group.controls[config.name].errors.minlength.requiredLength }} characters</clr-control-error
+  >
+</clr-input-container> -->
+
+<clr-date-container [formGroup]="group">
+  <label *ngIf="config.label">{{ config.label }}</label>
+  <input id="dateControl" type="date" clrDate [formControlName]="config.name" [autofocus]="config.autofocus || false" />
+  <clr-control-helper *ngIf="config.helpertext">{{ config.helpertext }}</clr-control-helper>
+  <clr-control-error *ngIf="group.controls[config.name].errors && group.controls[config.name].errors.required">This field is required!</clr-control-error>
+</clr-date-container>

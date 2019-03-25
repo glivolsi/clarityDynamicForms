@@ -11,7 +11,8 @@ import {
   DynamicFormCheckbox,
   DynamicFormInput,
   DynamicFormRange,
-  DynamicFormToggle
+  DynamicFormToggle,
+  DynamicFormDatepicker
 } from './dynamic-form/models/DynamicControls.class';
 
 @Component({
@@ -36,10 +37,16 @@ export class AppComponent implements AfterViewInit {
     }),
     new DynamicFormInput('alias', {
       label: 'Alias',
-
       placeholder: 'Enter alias',
       validation: [Validators.minLength(3)],
       inline: true
+    }),
+    new DynamicFormDatepicker('birthdate', {
+      label: 'Date of Birth',
+      placeholder: 'Enter your Birth Date',
+      validation: [Validators.required],
+      inline: true,
+      helpertext: 'Please insert your birth date'
     }),
     new DynamicFormInput('password', {
       label: 'Password',

@@ -46,6 +46,38 @@ export class DynamicFormInput {
   }
 }
 
+///////////////// DATE PICKER ////////////////////////////////////////////////
+
+export class DynamicFormDatepicker {
+  name: string;
+  controlType: string;
+  type: inputType;
+  value?: string;
+  validation?: ValidatorFn[];
+  placeholder?: string;
+  autofocus?: boolean;
+  disabled?: boolean;
+  label?: string;
+  inline?: boolean;
+  style?: any;
+  helpertext?: string;
+
+  constructor(name: string, options: InputOptions) {
+    this.name = name;
+    this.controlType = 'datepicker';
+    this.type = options.type || inputType.text;
+    this.placeholder = options.placeholder || '';
+    this.autofocus = options.autofocus || false;
+    this.value = options.value || null;
+    this.validation = options.validation || [];
+    this.disabled = options.disabled || false;
+    this.helpertext = options.helpertext || null;
+    this.label = options.label || '';
+    this.style = options.style || {};
+    this.style = options.inline ? { ...this.style, display: 'inline' } : this.style;
+  }
+}
+
 ///////////////// RANGE////////////////////////////////////////////////
 export interface RangeOptions {
   value?: number;

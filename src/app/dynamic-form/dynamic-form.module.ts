@@ -13,6 +13,7 @@ import { FormCheckBoxComponent } from './components/form-checkbox/form-checkbox.
 import { FormLabelComponent } from './components/form-label/form-label.component';
 import { ButtonService } from './components/form-button/button.service';
 import { FormToggleComponent } from './components/form-toggle/form-toggle.component';
+import { FormDatepickerComponent } from './components/form-datepicker/form-datepicker.component';
 
 @NgModule({
   imports: [CommonModule, ReactiveFormsModule, ClarityModule],
@@ -26,9 +27,19 @@ import { FormToggleComponent } from './components/form-toggle/form-toggle.compon
     FormRadioButtonComponent,
     FormCheckBoxComponent,
     FormLabelComponent,
-    FormToggleComponent
+    FormToggleComponent,
+    FormDatepickerComponent
   ],
   exports: [DynamicFormComponent],
-  entryComponents: [FormButtonComponent, FormInputComponent, FormSelectComponent, FormRadioButtonComponent, FormCheckBoxComponent, FormLabelComponent, FormToggleComponent]
+  entryComponents: [
+    FormButtonComponent,
+    FormInputComponent,
+    FormSelectComponent,
+    FormRadioButtonComponent,
+    FormCheckBoxComponent,
+    FormLabelComponent,
+    FormToggleComponent,
+    FormDatepickerComponent
+  ]
 })
 export class DynamicFormModule {}
